@@ -1,0 +1,33 @@
+
+
+
+.bgImg{background: url(../img/rikBG.png) no-repeat center center/cover; 
+    width: 100%; 
+    height: 100vh; 
+    display: flex;
+    justify-content: center; 
+    align-items: flex-end;}
+.keys{display: flex; 
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: row;
+    width: 300px;
+    background: rgba(255, 255, 255, 0.3);
+    margin-bottom: 50px;}
+.key{box-sizing: border-box;
+    cursor: pointer;
+    background: rgba(151, 174, 252, 0.842); 
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px; 
+    margin: 10px 20px;
+    border: 2px solid #000;
+    transition: 0.08s;
+    box-shadow: 0 0 10px rgba(0,0,0,0.8);}
+
+.playing{transform:scale(1.2);
+background: rgba(214, 56, 56, 0.76);
+border: 4px solid rgb(218, 149, 22);
+}
