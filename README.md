@@ -1,10 +1,2 @@
 # my_repo_test
-Hi i am andru It is a taest repo
-
-New repo in my git
-
-
-And second cange 
-
-
-1231231331312
+js 30 deys

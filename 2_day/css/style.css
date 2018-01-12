@@ -1,0 +1,11 @@
+
+
+
+.bgImg{background: url(../img/maxresdefault.jpg) no-repeat center center/cover; 
+    width: 100%; 
+    height: 100vh; 
+    position: relative;}
+.clock{background:url(../img/3-1.png) no-repeat center center/93%;
+    background-color:rgba(0, 0, 0, 0.5);
+    width: 300px; height: 300px; position: absolute; top: 10%; left: 20%;
+    border: 10px solid #fff; box-shadow: 0 0 10px #fff; border-radius: 50%; padding: 5px;}
