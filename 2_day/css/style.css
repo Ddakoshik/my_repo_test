@@ -9,3 +9,15 @@
     background-color:rgba(0, 0, 0, 0.5);
     width: 300px; height: 300px; position: absolute; top: 10%; left: 20%;
     border: 10px solid #fff; box-shadow: 0 0 10px #fff; border-radius: 50%; padding: 5px;}
+.houer{width: 30%; height: 7px; background: rgb(255, 255, 255);}
+
+.minutes{width: 38%; height: 4px; background: rgb(255, 255, 255); }
+
+.second{width: 40%; height: 2px; background: rgb(255, 255, 255); }
+
+.hand{position: absolute; 
+    top: 50%; left: 50%;
+    transform: translate(-100%, -50%) rotate(90deg);
+    transition: all 0.05s;
+    transition-timing-function: cubic-bezier(0.08, 0.82, 0, 2.26);  
+    transform-origin: 100%;}
