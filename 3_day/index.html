@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="conteiner">
+        <h2>Live CSS update with <span class="h1">JS</span></h2>
+        <div class="controlImg">
+            <label for="spacing">Spacing:</label>
+            <input type="range" name="spacing" min="10" max="200" value="10" data-sizing="px">
+            
+            <label for="blur">Blure:</label>
+            <input type="range" name="blur" min="0" max="25" value="10" data-sizing="px" >
+    
+            <label for="base">Base Color</label>
+            <input type="color" name="base" value="#ffc600">
+        </div>
+        <img src="img/city.jpg" alt="testImg">
+    </div>
+    
+
+
+
+
+
+<script>
+    const inputs = document.querySelectorAll('.controlImg input');
+
+    function handlerUpdte() {
+        const suffix = this.dataset.sizing || '';
+        document.documentElement.style.setProperty(`--${this.name}`, this.value + suffix);
+    }
+
+    inputs.forEach(input =>input.addEventListener('change', handlerUpdte));
+    inputs.forEach(input =>input.addEventListener('mousemove', handlerUpdte));
+</script>
+
+</body>
+</html>
