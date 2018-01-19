@@ -74,7 +74,7 @@
     <div class="panel panel1">
       <p>Hey</p>
       <p>Let's</p>
-      <p>Dance</p>
+      <p> Die</p>
     </div>
     <div class="panel panel2">
       <p>Give</p>
@@ -87,9 +87,9 @@
       <p>Today</p>
     </div>
     <div class="panel panel4">
-      <p>Give</p>
-      <p>All</p>
-      <p>You can</p>
+      <p>For</p>
+      <p>The</p>
+      <p>HORDE</p>
     </div>
     <div class="panel panel5">
       <p>Life</p>
@@ -99,6 +99,23 @@
   </div>
 
   <script>
+
+    const panels = document.querySelectorAll('.panel');
+    
+
+    function toggleOpen() {
+      this.classList.toggle('open');
+    }
+
+    function toggleActive(e) {
+      if(e.propertyName.includes('flex')){
+        this.classList.toggle('open-active');
+      }
+    }
+
+    panels.forEach(panel => panel.addEventListener('click', toggleOpen));
+    panels.forEach(panel => panel.addEventListener('transitionend', toggleActive));
+
   </script>
 
 
