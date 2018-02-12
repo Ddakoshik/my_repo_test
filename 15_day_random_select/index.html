@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+        <style>
+               #mainzone{width: 400px; height: 50px; background:#8c8ef9; display: flex; justify-content: center; align-items: center; margin: 200px auto 0; border-radius: 5px; cursor: pointer;}
+               #mainzone:hover{transition: 0.4s; background: #3a3dc3; }
+               #mainzone p{font-size: 24px; color: #fff; letter-spacing: 2px;}
+
+               #demo{display: flex; justify-content: center; align-items: center; width: 100%; margin: 50px auto;   }
+               #demo p{margin: 0 20px ; font-size: 22px;}
+               
+        </style>
+    <div id="mainzone">
+        <p>Поехали!</p>
+    </div>
+    <div id="demo"></div>
+
+<script>
+
+const secondHand = document.querySelector('#mainzone');
+
+var random1 = ['водный', 'огненный', 'воздушный', 'подземный', 'космический'];
+var random2 = ['дом', 'лес', 'пещера', 'руины', 'магазин', 'таверна', 'казино', 'кузня', 'офис'];
+var random3 = ['заброшенный', 'мрачный', 'психоделичный', 'яркий'];
+
+
+function toggleOpen() {
+    
+    var rand1 = random1[Math.floor(Math.random() * random1.length)];
+    var rand2 = random2[Math.floor(Math.random() * random2.length)];
+    var rand3 = random3[Math.floor(Math.random() * random3.length)];
+
+    console.log(rand1);
+    console.log(rand2);
+    console.log(rand3);
+
+      var x =  '<p>'+rand1+'</p><p>'+rand2+'</p><p>' +rand3+'</p>'; 
+      document.getElementById("demo").innerHTML = x;
+    // alert( document.body.innerHTML ); // <b>тест</b> (исправлено)
+}
+
+secondHand.addEventListener('click', toggleOpen);
+
+
+
+
+
+
+
+    
+
+
+    
+
+    // var arr = ["Яблоко", "Апельсин", "Груша", "Лимон"];
+
+    // var rand = Math.floor(Math.random() * arr.length);
+
+    // alert( arr[rand] );
+
+
+
+    // infos.innerHTML = '<strong>Nickname:</strong> '+players[i].nick+'<br>' +
+    //     '<strong>Role:</strong> '+players[i].role+'<br>' +
+    //     '<strong>Level:</strong> '+players[i].level+'<br>';
+    // infozone.appendChild(infos);
+
+</script>
+</body>
+</html>
