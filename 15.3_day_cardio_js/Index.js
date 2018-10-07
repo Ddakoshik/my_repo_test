@@ -64,8 +64,8 @@
     // ex. reverseInt(521) === 125
 
     function reverseInt(int) {
-        const revString = int.toString().split('').reverse().join('');
-        return parseInt(revString) * Math.sign(int);
+        // const revString = int.toString().split('').reverse().join('');
+        // return parseInt(revString) * Math.sign(int);
     }
 
 
@@ -73,7 +73,13 @@
     // CHALLENGE 4: CAPITALIZE LETTERS
     // Return a string with the first letter of every word capitalized
     // ex. capitalizeLetters('i love javascript') === 'I Love Javascript'
-    function capitalizeLetters(str) {}
+    function capitalizeLetters(str) {
+        //     const strArr = str.toLowerCase().split(' ');
+        //     for(let i = 0; i < strArr; i++) {
+        //             strArr[i] = strArr[i].substring(0, 1).toUpperCase() + strArr[i].substring(1);
+        //     }
+        // return strArr.join(' ');
+    }
 
 
 
@@ -91,7 +97,7 @@
 
 
     // Call Function
-    const output = reverseInt(-12345);
+    const output = capitalizeLetters('Hi all i am a mAn');
 
     console.log(output);
 
