@@ -28,7 +28,19 @@ class OtherDate extends SimpleDate {
     }
 }
 const tomorrow = new OtherDate(2018, 10, 16);
+const obj = {id:1 ,id:2 ,id:3 ,id:4}
+const arr = [1 ,2 ,3 ,4]
 console.log('tomorrow', tomorrow)
 console.log(tomorrow.toString())
+console.log(tomorrow instanceof SimpleDate );
+console.log(tomorrow instanceof OtherDate );
+console.log(tomorrow instanceof Array );
+console.log(toString.call(tomorrow) );
+console.log(toString.call(obj) );
+console.log(toString.call(arr) );
+console.log('arr is arr', Array.isArray(arr) );
+console.log(toString.call(123) );
+console.log(toString.call('123') );
+console.log(String.fromCharCode(48, 47, 46, 50))
 
 OtherDate.hello()
