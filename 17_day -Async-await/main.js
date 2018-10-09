@@ -31,10 +31,6 @@ const getProduct = async () => {
 
 
 
-
-
-
-
      
     // try{
     //     const products = await fetchProducts()
