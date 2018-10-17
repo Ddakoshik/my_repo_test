@@ -139,23 +139,3 @@ x.experience.some(i => skills.includes(i))
 );
 console.log(filtered);
 
-
-
-x.experience.some(i => skills.includes(i))
-
-
-// const _ = require('underscore');
-
-// let filtered = users.filter(x =>
-//   _.intersection(skills, x.experience)
-// );
-// console.log(filtered);
-
-
-
-
-// Можно улучшить:
-// x.experience.some(i => skills.includes(i))
-
-// let skillsSet = new Set(skills);
-// experience.some(el=>skillsSet.has(el))

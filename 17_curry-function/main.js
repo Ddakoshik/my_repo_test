@@ -27,7 +27,24 @@
       return a + b + c;
   }
   var curriedAdd = curry(add);
+
   
-  var result = curriedAdd(1)(1, 1)
+  var f;
+  setTimeout(function(){
+    return f = 5;
+  },500);
+
+  var e = setTimeout(function(){
+    return 4;
+  },1500);
+
+  var d = setTimeout(function(){
+    return 10;
+  },3500);
+
+
+  var result = curriedAdd(f)(e)(d)
+
+
   
   console.log('result', result)
